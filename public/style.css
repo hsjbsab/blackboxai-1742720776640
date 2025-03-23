@@ -1,0 +1,48 @@
+/* Custom styles on top of Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#logSection::-webkit-scrollbar {
+    width: 8px;
+}
+
+#logSection::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#logSection::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#logSection::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.log-entry {
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.log-entry.error {
+    color: #dc2626;
+}
+
+.log-entry.success {
+    color: #059669;
+}
+
+.log-entry.info {
+    color: #2563eb;
+}
+
+/* Animation for the progress spinner */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
